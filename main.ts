@@ -1,0 +1,10 @@
+basic.showIcon(IconNames.Happy)
+music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Ode), music.PlaybackMode.LoopingInBackground)
+basic.forever(function () {
+    SuperBit.MotorRun(SuperBit.enMotors.M1, 255)
+    basic.pause(3000)
+    SuperBit.MotorRun(SuperBit.enMotors.M1, -255)
+    basic.pause(6000)
+    SuperBit.MotorRun(SuperBit.enMotors.M1, 255)
+    basic.pause(3000)
+})
